@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onHSMClick(MenuItem menuItem, int position) {
                 Toast.makeText(MainActivity.this, ""+menuItem.getText(), Toast.LENGTH_SHORT).show();
-                textView.setText(menuItem.getText());
+               // textView.setText(menuItem.getText());
             }
         });
     }
