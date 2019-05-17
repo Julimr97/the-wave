@@ -1,7 +1,10 @@
 package com.example.appgrupo;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -12,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     HorizontalScrollMenuView menu;
     TextView textView;
+    Button btnlogin;
 
 
     @Override
@@ -20,6 +24,15 @@ public class MainActivity extends AppCompatActivity {
         //ARREGLAR QUE SE QUITA LA PANTALLA DE LOGIN Y SALE LA DE INICIO DIRECTAMENTE
         //CREO QUE SE ARREGLARIA CON UN ONCLICK BOTON LOGIN Y UN IF
         setContentView(R.layout.activity_main);
+
+        btnlogin = (Button)findViewById(R.id.entrar);
+        btnlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Inicio.class);
+                startActivity(intent);
+            }
+        });
 
 
         setContentView(R.layout.activity_inicio);
