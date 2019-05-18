@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     HorizontalScrollMenuView menu;
     TextView textView;
-    Button btnlogin;
+   // Button btnlogin;
 
 
     @Override
@@ -25,7 +26,31 @@ public class MainActivity extends AppCompatActivity {
         //CREO QUE SE ARREGLARIA CON UN ONCLICK BOTON LOGIN Y UN IF
         setContentView(R.layout.activity_main);
 
-        btnlogin = (Button)findViewById(R.id.entrar);
+        Button btnlogin = (Button) findViewById(R.id.entrar);
+
+        btnlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String usuario=((EditText) findViewById(R.id.usuario)).getText().toString();
+                String pass=((EditText) findViewById(R.id.password)).getText().toString();
+                if (usuario.equals("maki")&& pass.equals("1234"))
+                {
+                    startActivity(new Intent(MainActivity.this, Inicio.class));
+                }
+                else
+                {
+                    Toast.makeText(getApplicationContext(),"Usuario Incorrecto",Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+
+
+    }
+
+
+    //para pasar a la pantalla de inicio al darle al login
+   /*     btnlogin = (Button)findViewById(R.id.entrar);
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_inicio);
 
-        menu = (HorizontalScrollMenuView)findViewById(R.id.menu) ;
+       menu = (HorizontalScrollMenuView)findViewById(R.id.menu) ;
         textView = (TextView)findViewById(R.id.txtText);
 
         //creamos un metodo para añadir el menu
@@ -57,45 +82,11 @@ public class MainActivity extends AppCompatActivity {
                // textView.setText(menuItem.getText());
             }
         });
+        */
     }
 
 
 
 
 
-    public String uid;
-    public String nombre;
-    public String contraseña;
 
-    public MainActivity() {
-    }
-
-    public String getUid() {
-        return uid;
-    }
-
-    public void setUid(String uid) {
-        this.uid = uid;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getContraseña() {
-        return contraseña;
-    }
-
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
-    }
-
-    @Override
-    public String toString() {
-        return nombre;
-    }
-}

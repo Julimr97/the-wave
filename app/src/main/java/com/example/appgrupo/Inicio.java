@@ -15,14 +15,7 @@ public class Inicio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio);
 
-       // btnInicio = (Button)findViewById(R.id.);
-        btnInicio.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Inicio.this,Inicio.class);
-                startActivity(intent);
-            }
-        });
+
 
     }
 }

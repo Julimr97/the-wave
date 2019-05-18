@@ -25,6 +25,46 @@
         app:item_textColor="@color/negro"
         app:item_textSize="7sp">
 
+        <ImageButton
+            android:id="@+id/btnhome"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/rosa"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/inicio" />
+
+        <ImageButton
+            android:id="@+id/btncalendario"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/rosa"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_action_name" />
+
+        <ImageButton
+            android:id="@+id/btnmas"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/rosa"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/mas" />
+
+        <ImageButton
+            android:id="@+id/btninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="false"
+            android:backgroundTint="@color/rosa"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/informacion" />
+
+
+
     </com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView>
 
     <TextView
