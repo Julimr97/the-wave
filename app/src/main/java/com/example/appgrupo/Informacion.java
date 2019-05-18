@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-
 public class Informacion extends AppCompatActivity {
 
     Button button;
