@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio"
+    android:background="@color/negro">
+
+
+    <com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/menu"
+        app:backgroundMenuColor="@color/rosa"
+        app:icon_height="50dp"
+        app:icon_width="50dp"
+        app:item_backgroundColor="@color/rosa"
+        app:item_colorSelected="@color/blanco"
+        app:backgroundNotifications="@color/blanco"
+        app:item_marginBottom="4dp"
+        app:item_marginLeft="5dp"
+        app:item_marginRight="5dp"
+        app:item_marginTop="4dp"
+        app:item_textColor="@color/negro"
+        app:item_textSize="7sp">
+
+        <ImageButton
+            android:id="@+id/btnhome"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/rosa"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/inicio" />
+
+        <ImageButton
+            android:id="@+id/btncalendario"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/rosa"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_action_name" />
+
+        <ImageButton
+            android:id="@+id/btnmas"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/rosa"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/mas" />
+
+        <ImageButton
+            android:id="@+id/btninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="false"
+            android:backgroundTint="@color/rosa"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/informacion" />
+
+
+
+    </com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView>
+
+    <TextView
+        android:id="@+id/txtText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:layout_centerInParent="true"/>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="409dp"
+        android:layout_height="388dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+</RelativeLayout>
+
