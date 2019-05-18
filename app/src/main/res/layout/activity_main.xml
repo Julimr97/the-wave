@@ -16,13 +16,13 @@
         android:layout_marginLeft="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="330dp"
         android:ems="10"
+        android:backgroundTint="@color/rosa"
+        android:textSize="15dp"
         android:textColor="@color/negro"
         android:hint="@string/email"
         android:inputType="textPersonName"
-        android:text="@string/usuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
@@ -36,11 +36,12 @@
         android:layout_marginLeft="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:layout_marginTop="330dp"
+        android:layout_marginTop="410dp"
         android:ems="10"
         android:textColor="@color/negro"
+        android:textSize="15dp"
         android:hint="@string/password"
-        android:text="@string/contrase_a"
+        android:backgroundTint="@color/rosa"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,11 +53,12 @@
         android:id="@+id/entrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="500dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
+        android:textSize="18dp"
         android:text="@string/login"
         android:textColor="@color/negro"
         android:background="@drawable/button_rounded"
@@ -64,24 +66,6 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="383dp" />
-
-    <Button
-        android:id="@+id/registrar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginTop="470dp"
-        android:text="@string/registrarse"
-        android:textColor="@color/negro"
-        android:background="@drawable/button_rounded"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="448dp" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -100,4 +84,37 @@
         app:srcCompat="@drawable/icono"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="59dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Usuario"
+        android:textSize="15dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="290dp"
+        android:inputType="textPersonName"
+        android:text="Usuario"
+        android:textColor="@color/negro"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+
+        android:textSize="15dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPersonName"
+        android:text="Contraseña"
+        android:textColor="@color/negro" />
 </RelativeLayout>
