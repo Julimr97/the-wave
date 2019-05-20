@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mas">
+
+    <ImageButton
+        android:id="@+id/btnhome"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="@color/rosa"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/inicio"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btncalendario"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="105dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/rosa"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_action_name"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnmas"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="205dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/rosa"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/mas"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btninfo"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="305dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="false"
+        android:backgroundTint="@color/rosa"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/informacion"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="40dp"
+        android:text="EN PROCESO..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="335dp"
+        tools:ignore="MissingConstraints" />
+</RelativeLayout>

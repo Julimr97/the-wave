@@ -44,22 +44,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
     }
-
-
-    //para pasar a la pantalla de inicio al darle al login
-   /*     btnlogin = (Button)findViewById(R.id.entrar);
-        btnlogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,Inicio.class);
-                startActivity(intent);
-            }
-        });
-
-
+    
+  /*
         setContentView(R.layout.activity_inicio);
 
        menu = (HorizontalScrollMenuView)findViewById(R.id.menu) ;
