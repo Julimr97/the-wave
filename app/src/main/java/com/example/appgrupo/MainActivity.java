@@ -33,13 +33,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String usuario=((EditText) findViewById(R.id.usuario)).getText().toString();
                 String pass=((EditText) findViewById(R.id.password)).getText().toString();
-                if (usuario.equals("maki")&& pass.equals("1234"))
+                if (usuario.equals("grupo")&& pass.equals("wave"))
                 {
                     startActivity(new Intent(MainActivity.this, Inicio.class));
                 }
                 else
                 {
-                    Toast.makeText(getApplicationContext(),"Usuario Incorrecto",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Usuario y/o Contraseña Incorrecto/s",Toast.LENGTH_SHORT).show();
                 }
             }
         });

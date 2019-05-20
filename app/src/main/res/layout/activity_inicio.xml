@@ -9,15 +9,15 @@
 
 
     <com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
         android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:backgroundMenuColor="@color/rosa"
+        app:backgroundNotifications="@color/blanco"
         app:icon_height="50dp"
         app:icon_width="50dp"
         app:item_backgroundColor="@color/rosa"
         app:item_colorSelected="@color/blanco"
-        app:backgroundNotifications="@color/blanco"
         app:item_marginBottom="4dp"
         app:item_marginLeft="5dp"
         app:item_marginRight="5dp"
@@ -25,53 +25,116 @@
         app:item_textColor="@color/negro"
         app:item_textSize="7sp">
 
-        <ImageButton
-            android:id="@+id/btnhome"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/rosa"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/inicio" />
-
-        <ImageButton
-            android:id="@+id/btncalendario"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/rosa"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/ic_action_name" />
-
-        <ImageButton
-            android:id="@+id/btnmas"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/rosa"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/mas" />
-
-        <ImageButton
-            android:id="@+id/btninfo"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:adjustViewBounds="false"
-            android:backgroundTint="@color/rosa"
-            android:cropToPadding="true"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/informacion" />
-
-
-
     </com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView>
 
-    <TextView
-        android:id="@+id/txtText"
+    <ImageButton
+        android:id="@+id/btnhome"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="@color/rosa"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/inicio" />
+
+    <ImageButton
+        android:id="@+id/btncalendario"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="105dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/rosa"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_action_name" />
+
+    <ImageButton
+        android:id="@+id/btnmas"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="205dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/rosa"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/mas" />
+
+    <ImageButton
+        android:id="@+id/btninfo"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="305dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="false"
+        android:backgroundTint="@color/rosa"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/informacion" />
+
+    <Button
+        android:id="@+id/btnFecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="50sp"
-        android:layout_centerInParent="true"/>
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="300dp"
+        android:layout_weight="1"
+        android:textColor="@color/negro"
+        android:background="@color/rosa"
+        android:text="FECHA" />
+
+    <EditText
+        android:id="@+id/HoraTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="300dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textColor="@color/negro"
+        tools:text="@tools:sample/date/mmddyy" />
+
+    <Button
+        android:id="@+id/btnHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/menu"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="400dp"
+        android:layout_weight="1"
+        android:textColor="@color/negro"
+        android:background="@color/rosa"
+        android:text="HORA"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <EditText
+        android:id="@+id/FechaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="400dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textColor="@color/negro"
+        tools:text="@tools:sample/date/hhmm" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_weight="1"
+        android:text="Añade aqui la fecha y la hora de inicio de tu periodo."
+        android:textColor="@color/negro" />
+
 
 </RelativeLayout>

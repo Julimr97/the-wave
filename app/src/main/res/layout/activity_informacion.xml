@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -24,54 +24,52 @@
         app:item_textColor="@color/negro"
         app:item_textSize="7sp">
 
-        <ImageButton
-            android:id="@+id/btnhome"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/rosa"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/inicio" />
-
-        <ImageButton
-            android:id="@+id/btncalendario"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/rosa"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/ic_action_name" />
-
-        <ImageButton
-            android:id="@+id/btnmas"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/rosa"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/mas" />
-
-        <ImageButton
-            android:id="@+id/btninfo"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:adjustViewBounds="false"
-            android:backgroundTint="@color/rosa"
-            android:cropToPadding="true"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/informacion" />
-
-
-
     </com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView>
 
-    <TextView
-        android:id="@+id/txtText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="50sp"
-        android:layout_centerInParent="true"
+    <ImageButton
+        android:id="@+id/btnhome"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="@color/rosa"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/inicio"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btncalendario"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="105dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/rosa"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_action_name"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnmas"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="205dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/rosa"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/mas"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btninfo"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="305dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="false"
+        android:backgroundTint="@color/rosa"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/informacion"
         tools:ignore="MissingConstraints" />
 
 
@@ -82,6 +80,7 @@
         android:backgroundTint="@color/rosa"
         android:text="PREDICCIONES"
         android:textColor="@color/negro"
+        android:layout_marginTop="100dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="88dp" />
@@ -92,6 +91,7 @@
         android:layout_height="wrap_content"
         android:text="CICLO LUNAR"
         android:backgroundTint="@color/rosa"
+        android:layout_marginTop="145dp"
         android:textColor="@color/negro"
         app:layout_constraintTop_toBottomOf="@+id/button"/>
 
@@ -100,6 +100,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="VENTANA FERTIL"
+        android:layout_marginTop="190dp"
         android:textColor="@color/negro"
         android:backgroundTint="@color/rosa"
         app:layout_constraintTop_toBottomOf="@+id/button2"/>
@@ -110,6 +111,7 @@
         android:layout_height="wrap_content"
         android:text="INFORMACIÓN"
         android:textColor="@color/negro"
+        android:layout_marginTop="235dp"
         android:backgroundTint="@color/rosa"
         app:layout_constraintTop_toBottomOf="@+id/button3"/>
 
@@ -117,6 +119,7 @@
         android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="285dp"
         app:layout_constraintTop_toBottomOf="@+id/button4"
         android:text=""
         android:textSize="24dp"
@@ -130,4 +133,4 @@
         app:layout_constraintTop_toBottomOf="@+id/button4"
         tools:ignore="MissingConstraints" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
