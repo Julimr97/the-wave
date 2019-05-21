@@ -8,15 +8,15 @@
     android:background="@color/blanco">
 
     <com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
         android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:backgroundMenuColor="@color/rosa"
+        app:backgroundNotifications="@color/blanco"
         app:icon_height="50dp"
         app:icon_width="50dp"
         app:item_backgroundColor="@color/rosa"
         app:item_colorSelected="@color/blanco"
-        app:backgroundNotifications="@color/blanco"
         app:item_marginBottom="4dp"
         app:item_marginLeft="5dp"
         app:item_marginRight="5dp"
@@ -24,6 +24,15 @@
         app:item_textColor="@color/negro"
         app:item_textSize="7sp">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
     </com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView>
 
     <ImageButton
@@ -78,7 +87,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/rosa"
-        android:text="PREDICCIONES"
+        android:text="CONSEJOS"
         android:textColor="@color/negro"
         android:layout_marginTop="100dp"
         tools:ignore="MissingConstraints"
@@ -119,17 +128,20 @@
         android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="285dp"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
+        android:layout_marginRight="15dp"
         android:text=""
-        android:textSize="24dp"
+        android:textColor="@color/negro"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imagen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="285dp"
         app:layout_constraintTop_toBottomOf="@+id/button4"
         tools:ignore="MissingConstraints" />
 

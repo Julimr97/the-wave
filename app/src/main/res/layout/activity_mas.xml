@@ -52,15 +52,85 @@
         app:srcCompat="@drawable/informacion"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textView3"
+
+    <Button
+        android:id="@+id/btMostrar"
+        android:layout_width="112dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="226dp"
+        android:layout_marginLeft="226dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginRight="74dp"
+        android:text="MOSTRAR"
+        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintVertical_bias="0.964" />
+
+    <TextView android:layout_height="38dp"
+        android:layout_width="333dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintVertical_bias="0.073"
+        app:layout_constraintHorizontal_bias="0.509"
+        android:text="Crear Nota"
+        android:id="@+id/textView"
+        android:textSize="18sp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btguardar"
+        android:layout_width="112dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="500dp"
+        android:onClick="GuardarDatos"
+        android:text="GUARDAR"
+        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintVertical_bias="0.964" />
+
+    <EditText
+        android:id="@+id/txtdescripcion"
+        android:layout_width="357dp"
+        android:layout_height="203dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="34dp"
+        android:ems="10"
+        android:inputType="text|textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="126dp" />
+
+
+    <EditText android:layout_height="49dp"
+        android:layout_width="252dp"
+        app:layout_constraintVertical_bias="0.8"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="27dp"
+        app:layout_constraintHorizontal_bias="0.097"
+        android:id="@+id/txtexaminar"
+        android:inputType="textPersonName"
+        android:ems="10"/>
+
+    <Button android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
-        android:layout_marginLeft="40dp"
-        android:text="EN PROCESO..."
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="335dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.805"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="280dp"
+        app:layout_constraintHorizontal_bias="0.944"
+        android:text="EXAMINAR"
+        android:id="@+id/btexaminar"/>
+
 </RelativeLayout>
