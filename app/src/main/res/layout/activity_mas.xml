@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blanco"
     tools:context=".Mas">
 
     <ImageButton
@@ -68,18 +69,22 @@
         android:layout_marginRight="74dp"
         android:text="MOSTRAR"
         app:layout_constraintHorizontal_bias="0.713"
-        app:layout_constraintVertical_bias="0.964" />
+        app:layout_constraintVertical_bias="0.964"
+        android:textColor="@color/negro"
+        android:background="@color/rosa"/>
 
     <TextView android:layout_height="38dp"
         android:layout_width="333dp"
         android:layout_marginTop="150dp"
         android:layout_marginLeft="50dp"
+        android:textColor="@color/negro"
         app:layout_constraintVertical_bias="0.073"
         app:layout_constraintHorizontal_bias="0.509"
         android:text="Crear Nota"
         android:id="@+id/textView"
-        android:textSize="18sp"
-        android:textAlignment="center"/>
+        android:textSize="26sp"
+        android:textAlignment="center"
+/>
 
     <Button
         android:id="@+id/btguardar"
@@ -93,10 +98,13 @@
         android:onClick="GuardarDatos"
         android:text="GUARDAR"
         app:layout_constraintHorizontal_bias="0.231"
-        app:layout_constraintVertical_bias="0.964" />
+        app:layout_constraintVertical_bias="0.964"
+        android:textColor="@color/negro"
+        android:background="@color/rosa"/>
 
     <EditText
         android:id="@+id/txtdescripcion"
+        style="@style/Base.Widget.MaterialComponents.TextInputEditText"
         android:layout_width="357dp"
         android:layout_height="203dp"
         android:layout_alignParentStart="true"
@@ -108,8 +116,10 @@
         android:layout_marginTop="225dp"
         android:layout_marginEnd="27dp"
         android:layout_marginRight="34dp"
+        android:backgroundTint="@color/rosa"
         android:ems="10"
         android:inputType="text|textPersonName"
+        android:singleLine="false"
         app:layout_constraintLeft_toLeftOf="parent"
         tools:layout_editor_absoluteY="126dp" />
 
@@ -120,6 +130,7 @@
         android:layout_marginTop="430dp"
         android:layout_marginLeft="27dp"
         app:layout_constraintHorizontal_bias="0.097"
+        android:backgroundTint="@color/rosa"
         android:id="@+id/txtexaminar"
         android:inputType="textPersonName"
         android:ems="10"/>
@@ -131,6 +142,8 @@
         android:layout_marginLeft="280dp"
         app:layout_constraintHorizontal_bias="0.944"
         android:text="EXAMINAR"
-        android:id="@+id/btexaminar"/>
+        android:id="@+id/btexaminar"
+        android:textColor="@color/negro"
+        android:background="@color/rosa"/>
 
 </RelativeLayout>

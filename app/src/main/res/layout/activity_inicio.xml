@@ -70,7 +70,7 @@
         app:srcCompat="@drawable/informacion" />
 
     <Button
-        android:id="@+id/btnFecha"
+        android:id="@+id/btnFechaInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
@@ -78,7 +78,7 @@
         android:layout_weight="1"
         android:textColor="@color/negro"
         android:background="@color/rosa"
-        android:text="FECHA" />
+        android:text="FECHA INICIO" />
 
     <EditText
         android:id="@+id/HoraTxt"
@@ -89,35 +89,8 @@
         android:layout_weight="1"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         android:textColor="@color/negro"
         tools:text="@tools:sample/date/mmddyy" />
-
-    <Button
-        android:id="@+id/btnHora"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/menu"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="400dp"
-        android:layout_weight="1"
-        android:textColor="@color/negro"
-        android:background="@color/rosa"
-        android:text="HORA"
-        android:textAppearance="@style/TextAppearance.AppCompat" />
-
-    <EditText
-        android:id="@+id/FechaTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="400dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:textColor="@color/negro"
-        tools:text="@tools:sample/date/hhmm" />
 
     <TextView
         android:id="@+id/textView2"
@@ -135,6 +108,29 @@
         android:layout_weight="1"
         android:text="Añade aqui la fecha y la hora de inicio de tu periodo."
         android:textColor="@color/negro" />
+
+    <Button
+        android:id="@+id/btnFechaFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="400dp"
+        android:layout_weight="1"
+        android:textColor="@color/negro"
+        android:background="@color/rosa"
+        android:text="FECHA FIN" />
+
+    <EditText
+        android:id="@+id/HoraTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="400dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/negro"
+        tools:text="@tools:sample/date/mmddyy" />
 
 
 </RelativeLayout>
