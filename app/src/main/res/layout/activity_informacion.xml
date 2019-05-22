@@ -98,21 +98,21 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CICLO LUNAR"
-        android:backgroundTint="@color/rosa"
         android:layout_marginTop="145dp"
+        android:backgroundTint="@color/rosa"
+        android:text="VENTANA FERTIL"
         android:textColor="@color/negro"
-        app:layout_constraintTop_toBottomOf="@+id/button"/>
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="VENTANA FERTIL"
         android:layout_marginTop="190dp"
-        android:textColor="@color/negro"
         android:backgroundTint="@color/rosa"
-        app:layout_constraintTop_toBottomOf="@+id/button2"/>
+        android:text="CICLO LUNAR"
+        android:textColor="@color/negro"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
         android:id="@+id/button4"

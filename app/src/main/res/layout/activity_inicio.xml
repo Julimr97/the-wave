@@ -106,7 +106,7 @@
         android:layout_marginEnd="46dp"
         android:layout_marginRight="46dp"
         android:layout_weight="1"
-        android:text="Añade aqui la fecha y la hora de inicio de tu periodo."
+        android:text="Añade aqui la fecha de inicio de tu perio y la fecha de fin de tu periodo para obtener un seguimiento más preciso."
         android:textColor="@color/negro" />
 
     <Button
